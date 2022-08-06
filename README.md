@@ -13,8 +13,8 @@ HW2: Anomaly Detection
 MP1: Web-app for Sensor value prediction
   - Source file is "MP1_flaskapp.py" 
   - Goal: build web app that will predict Sensor 2 values based on user input for Sensor 1 value
-          - Route 1: User inputs a Sensor 1 value and receives a Sensor 2 value back. Sensor 1 values have to be saved to db file on each user input
-          - Route 2: Admin route should allow admin to train new predicitive model on new database which includes the inputted Sensor 1 values
+    - Route 1: User inputs a Sensor 1 value and receives a Sensor 2 value back. Sensor 1 values have to be saved to db file on each user input
+    - Route 2: Admin route should allow admin to train new predicitive model on new database which includes the inputted Sensor 1 values
           - Route 3: Display RMSE of model
 
 MP2: Neural Network for Image Classification
