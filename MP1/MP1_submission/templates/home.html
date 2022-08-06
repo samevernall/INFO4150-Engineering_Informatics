@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Car Condition Evaluator</title>
+
+<head>
+    <style>
+        #output {
+            background-color: green;
+            width: 500px;
+            border: 10px solid black;
+            margin: 20px;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(90, 167, 219);">
+    <h1 style="color:black;text-align:center">Model Trainer & Sensor 2 Predictor</h1>
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+    </style>
+    <img src="design_img.jpg" alt="Sensor Brand" style="width:500px;height:188px;">
+
+    <form action="/predict" method="POST" onkeydown="return event.key != 'Enter';">
+        <div style="width: 500px;border: 10px solid white;padding: 20px;margin-top: 20px; margin-left: auto;
+        margin-right: auto;;background-color: black;color:white;">
+
+            <label for="sensor1val">Enter Sensor 1 Value (between -10 and 10):</label>
+            <input type="number"  step ="any" id="sensor1val" placeholder="sensor 1" name="sensor1val" min="-10" max="10">
+            <input type="submit" value="Submit">
+
+        </div>
+    </form>
+
+    <form action="/model" method="POST" onkeydown="return event.key != 'Enter';">
+        <div style="width: 500px;border: 10px solid white;padding: 20px;margin-top: 20px; margin-left: auto;
+        margin-right: auto;;background-color: black;color:white;">
+
+            <label for="password">Enter password to train model:</label>
+            <input type="password"  id="password" name="password">
+            <input type="submit" value="Train Model">
+
+        </div>
+    </form>
+
+</body>
+
+</html>
